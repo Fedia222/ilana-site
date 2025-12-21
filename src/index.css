@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 30% 97%;
+    --foreground: 30 10% 25%;
+
+    --card: 40 25% 95%;
+    --card-foreground: 30 10% 25%;
+
+    --popover: 40 30% 97%;
+    --popover-foreground: 30 10% 25%;
+
+    --primary: 75 25% 42%;
+    --primary-foreground: 40 30% 97%;
+
+    --secondary: 35 30% 90%;
+    --secondary-foreground: 30 10% 25%;
+
+    --muted: 35 20% 92%;
+    --muted-foreground: 30 8% 50%;
+
+    --accent: 75 20% 88%;
+    --accent-foreground: 75 25% 32%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 75 25% 42%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --hero-bg: 75 18% 85%;
+    --hero-overlay: 75 25% 42%;
+    --warm-cream: 40 35% 96%;
+    --sage: 75 25% 42%;
+    --sage-light: 75 20% 92%;
+    --olive: 75 30% 35%;
+    --taupe: 30 15% 55%;
+    --soft-brown: 25 20% 40%;
+
+    /* Typography */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Source Sans 3', system-ui, sans-serif;
+
+    /* Shadows */
+    --shadow-soft: 0 4px 30px hsl(30 15% 50% / 0.08);
+    --shadow-elevated: 0 8px 40px hsl(30 15% 50% / 0.12);
+
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 30 10% 12%;
+    --foreground: 40 25% 92%;
+
+    --card: 30 10% 15%;
+    --card-foreground: 40 25% 92%;
+
+    --popover: 30 10% 12%;
+    --popover-foreground: 40 25% 92%;
+
+    --primary: 75 30% 55%;
+    --primary-foreground: 30 10% 12%;
+
+    --secondary: 30 10% 20%;
+    --secondary-foreground: 40 25% 92%;
+
+    --muted: 30 10% 20%;
+    --muted-foreground: 40 15% 60%;
+
+    --accent: 75 20% 25%;
+    --accent-foreground: 75 30% 70%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 10% 22%;
+    --input: 30 10% 22%;
+    --ring: 75 30% 55%;
+
+    --hero-bg: 30 10% 18%;
+    --sage-light: 75 15% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    @apply font-medium tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+/* Animations */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
