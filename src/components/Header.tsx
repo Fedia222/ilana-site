@@ -115,10 +115,10 @@ const Header = () => {
               asChild
               className="text-[10px] md:text-xs px-3 md:px-8 py-2 md:py-4 h-auto"
             >
-              <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+              <Link to="/cadre-et-cout">
                 <span className="hidden sm:inline">Prendre RDV</span>
                 <span className="sm:hidden">RDV</span>
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

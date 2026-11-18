@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const CALENDLY_URL = "https://calendly.com/ilana-sidoun/consultation-individuelle";
 
@@ -63,9 +64,9 @@ const ContactSection = () => {
 
         <div className="text-center opacity-0 animate-fade-up animation-delay-500">
           <Button variant="hero" size="lg" asChild className="text-xs md:text-sm">
-            <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-              Prendre rendez-vous en ligne
-            </a>
+            <Link to="/cadre-et-cout">
+              Prendre rendez-vous
+            </Link>
           </Button>
           <p className="mt-3 md:mt-4 text-xs md:text-sm text-muted-foreground">
             Consultations en cabinet ou par visioconférence

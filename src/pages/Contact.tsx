@@ -3,6 +3,7 @@ import ContactSection from "@/components/ContactSection";
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoTete from "@/assets/logo-tete.png";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const handleDownload = (imagePath: string, fileName: string) => {

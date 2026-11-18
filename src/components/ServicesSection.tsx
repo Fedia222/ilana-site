@@ -2,6 +2,7 @@ import { User, Users, Sparkles, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import ilanaProfile from "@/assets/ilana-profile.png";
+import { Link } from "react-router-dom";
 
 const services = [
   {

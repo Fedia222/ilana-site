@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { User, Users, Heart, Brain, Smile, Shield, Globe, Home, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoTete from "@/assets/logo-tete.png";
+import { Link } from "react-router-dom";
 
 const CALENDLY_URL = "https://calendly.com/ilana-sidoun/consultation-individuelle";
 
@@ -108,9 +109,9 @@ const Accompagnements = () => {
             {/* CTA */}
             <div className="mt-12 text-center">
               <Button variant="hero" size="lg" asChild>
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                <Link to="/cadre-et-cout">
                   Prendre rendez-vous
-                </a>
+                </Link>
               </Button>
             </div>
           </div>

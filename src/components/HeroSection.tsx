@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import ilanaProfile from "@/assets/ilana-profile.png";
+import { Link } from "react-router-dom";
 
 const CALENDLY_URL = "https://calendly.com/ilana-sidoun/consultation-individuelle";
 
@@ -24,12 +25,12 @@ const HeroSection = () => {
           <div className="opacity-0 animate-fade-up order-1 md:order-1">
             {/* Main identity (SEO-friendly) */}
             <h1 className="font-heading text-2xl md:text-5xl lg:text-6xl text-foreground leading-tight text-balance">
-              Thérapeute et Psychopracticienne : Clinique, Psychanalyse
+              Offrez-vous un espace pour mieux vous comprendre.
             </h1>
 
-            {/* Tagline */}
+            {/* Tagline pour ajouter texte en dessous enim*/}
             <p className="mt-2 md:mt-4 text-base md:text-xl text-muted-foreground leading-relaxed max-w-xl">
-              Offrez-vous un espace pour mieux vous comprendre.
+              
             </p>
 
             {/* Supporting description */}
@@ -41,9 +42,9 @@ const HeroSection = () => {
 
             <div className="mt-6 md:mt-10">
               <Button variant="hero" size="lg" asChild className="text-xs md:text-sm">
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                <Link to = "/cadre-et-cout">
                   Prendre rendez-vous
-                </a>
+                </Link>
               </Button>
             </div>
           </div>
