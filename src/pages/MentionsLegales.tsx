@@ -48,7 +48,7 @@ const MentionsLegales = () => {
               <p>
                 <strong>Entreprise Individuelle Ilana Sidoun EI</strong><br />
                 SIREN : 944 967 207<br />
-                Adresse postale : 8 parc de la Bérengère, 92210 Saint-Cloud, France
+                Adresse postale : 36 Avenue de la République, 92130 Issy-les-Moulineaux, France
               </p>
             </section>
 

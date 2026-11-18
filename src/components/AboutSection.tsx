@@ -106,7 +106,7 @@ const AboutSection = () => {
                   </p>
                   <p className="text-muted-foreground text-xs md:text-sm mt-1">
                     Master en psychologie clinique, psychopathologie et psychothérapie mention psychologie
-                    transculturelle de l'Université Sigmund Freud de Vienne
+                    interculturelle de l'Université Sigmund Freud de Vienne
                   </p>
                 </div>
               </div>

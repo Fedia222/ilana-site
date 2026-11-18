@@ -34,7 +34,7 @@ const PolitiqueConfidentialite = () => {
                 <strong>Ilana Sidoun</strong><br />
                 Entreprise Individuelle Ilana Sidoun EI<br />
                 SIREN : 944 967 207<br />
-                8 parc de la Bérengère, 92210 Saint-Cloud, France<br />
+                36 Avenue de la République, 92130 Issy-les-Moulineaux, France<br />
                 Email : ilana.sidoun@gmail.com<br />
                 Téléphone : +33 6 22 95 90 80
               </p>

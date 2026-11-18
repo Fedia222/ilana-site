@@ -77,16 +77,7 @@ const QuiSuisJe = () => {
             {/* Médoucine link */}
             <div className="mt-6 text-center">
               <p className="text-muted-foreground text-sm md:text-base">
-                Vous pouvez également me retrouver sur Médoucine en{" "}
-                <a
-                  href="https://www.medoucine.com/consultation/issy-les-moulineaux/ilana-sidoun/22717"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-olive hover:text-foreground transition-colors underline inline-flex items-center gap-1"
-                >
-                  cliquant ici
-                  <ExternalLink className="w-3 h-3" />
-                </a>
+                
               </p>
             </div>
 
@@ -103,7 +94,7 @@ const QuiSuisJe = () => {
                     </p>
                     <p className="text-muted-foreground text-sm mt-1">
                       Master en psychologie clinique, psychopathologie et psychothérapie mention 
-                      psychologie transculturelle de l'Université Sigmund Freud de Vienne
+                      psychologie interculturelle de l'Université Sigmund Freud de Vienne
                     </p>
                   </div>
                 </div>
