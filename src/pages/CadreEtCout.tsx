@@ -167,7 +167,7 @@ const CadreEtCout = () => {
                     pour ceux qui le souhaitent ou ne peuvent se déplacer.
                   </p>
                   <p>
-                    Pour prendre rendez-vous en visioconférence, merci de me contacter directement :
+                    Pour prendre rendez-vous (présentiel ou visioconférence), merci de me contacter directement :
                   </p>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
